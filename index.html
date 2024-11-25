@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JQuery and plug-in</title>
+<link href="css/plugin.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+      <!--Popup Gallery-->
+<h1>Magnific-Popup Video and Map</h1>
+<a class="popup-youtube" href="http://www.youtube.com/watch?v=A2gmT3SR1vI">Open YouTube video</a><br>
+<a class="popup-vimeo" href="https://vimeo.com/363540035">Open Vimeo video</a><br>
+<a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.09260232707!2d26.58593234385799!3d48.66547171660811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733b862e9389d49%3A0xe3e2e7ed294b73a!2sPlanning%20and%20Economics%20College%20boarding!5e0!3m2!1sru!2sua!4v1732536479443!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Open Google Map</a>
+<style>/**
+  * Simple fade transition,
+  */
+ .mfp-fade.mfp-bg {
+   opacity: 0;
+   -webkit-transition: all 0.15s ease-out; 
+   -moz-transition: all 0.15s ease-out; 
+   transition: all 0.15s ease-out;
+ }
+ .mfp-fade.mfp-bg.mfp-ready {
+   opacity: 0.8;
+ }
+ .mfp-fade.mfp-bg.mfp-removing {
+   opacity: 0;
+ }
+ 
+ .mfp-fade.mfp-wrap .mfp-content {
+   opacity: 0;
+   -webkit-transition: all 0.15s ease-out; 
+   -moz-transition: all 0.15s ease-out; 
+   transition: all 0.15s ease-out;
+ }
+ .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+   opacity: 1;
+ }
+ .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+   opacity: 0;
+ }</style>
+
+      <h1>Magnific-Popup Gallery</h1>
+      <div class="popup-gallery" bis_skin_checked="1">
+        <a href="image/kitty-cat-kitten-pet-45201.jpeg" title="Cat" bis_size="{&quot;x&quot;:725,&quot;y&quot;:778,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:725,&quot;abs_y&quot;:778}"><img src="image/kitty-cat-kitten-pet-45201.jpeg" bis_size="{&quot;x&quot;:725,&quot;y&quot;:778,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:725,&quot;abs_y&quot;:778}" bis_id="bn_vny2p2dneaqqqkxpjocexj" width="75" height="75"></a>
+        <a href="image/pexels-366671-991831.jpg" title="Cat" bis_size="{&quot;x&quot;:805,&quot;y&quot;:778,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:805,&quot;abs_y&quot;:778}"><img src="image/pexels-366671-991831.jpg" bis_size="{&quot;x&quot;:805,&quot;y&quot;:778,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:805,&quot;abs_y&quot;:778}" bis_id="bn_1fk2t0oq7gjjzdi7nlddx7" width="75" height="75"></a>
+        <a href="image/pexels-roshan-kamath-793618-1661179.jpg" title="Parrot" bis_size="{&quot;x&quot;:885,&quot;y&quot;:778,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:885,&quot;abs_y&quot;:778}"><img src="image/pexels-roshan-kamath-793618-1661179.jpg" bis_size="{&quot;x&quot;:885,&quot;y&quot;:778,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:885,&quot;abs_y&quot;:778}" bis_id="bn_ou0s1l18gbshdpih9cuohq" width="75" height="75"></a>
+        <a href="image/pexels-alex-andrews-271121-2295744.jpg" title="Fox" bis_size="{&quot;x&quot;:965,&quot;y&quot;:778,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:965,&quot;abs_y&quot;:778}"><img src="image/pexels-alex-andrews-271121-2295744.jpg" bis_size="{&quot;x&quot;:965,&quot;y&quot;:778,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:965,&quot;abs_y&quot;:778}" bis_id="bn_9ezk8q3s8komxnmude4e7k" width="75" height="75"></a>
+        <a href="image/pexels-belle-co-99483-847393.jpg" title="Dog" bis_size="{&quot;x&quot;:725,&quot;y&quot;:858,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:725,&quot;abs_y&quot;:858}"><img src="image/pexels-belle-co-99483-847393.jpg" bis_size="{&quot;x&quot;:725,&quot;y&quot;:858,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:725,&quot;abs_y&quot;:858}" bis_id="bn_7aedrsww91atnre8dtblfn" width="75" height="75"></a>
+        <a href="image/pexels-charlesdeluvio-1851164.jpg" title="Turtle" bis_size="{&quot;x&quot;:805,&quot;y&quot;:858,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:805,&quot;abs_y&quot;:858}"><img src="image/pexels-charlesdeluvio-1851164.jpg" bis_size="{&quot;x&quot;:805,&quot;y&quot;:858,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:805,&quot;abs_y&quot;:858}" bis_id="bn_4herydx20ge1zc4vhumn98" width="75" height="75"></a>
+        <a href="image/pexels-futurekiiid-3551498.jpg" title="Elepfant" bis_size="{&quot;x&quot;:885,&quot;y&quot;:858,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:885,&quot;abs_y&quot;:858}"><img src="image/pexels-futurekiiid-3551498.jpg" bis_size="{&quot;x&quot;:885,&quot;y&quot;:858,&quot;w&quot;:75,&quot;h&quot;:75,&quot;abs_x&quot;:885,&quot;abs_y&quot;:858}" bis_id="bn_nd2s78qjnphmccxjm00kza" width="75" height="75"></a>
+      </div>
+
+<!--Owl Cariusel-->
+      <h1>Owl Carousel</h1>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="image/pi.jpg"></div>
+        <div class="item"><img src="image/800ximg_5576.jpg"></div>
+        <div class="item"><img src="image/ages.jpg"></div>
+        <div class="item"><img src="image/depositphotos_8523238-stock-photo-colorful-eye.webp"></div>
+        <div class="item"><img src="image/ges.jpg"></div>
+        <div class="item"><img src="image/images 2.jpg"></div>
+        <div class="item"><img src="image/images 3.jpg"></div>
+        <div class="item"><img src="image/images 4.jpg"></div>
+        <div class="item"><img src="image/imes.jpg"></div>
+        <div class="item"><img src="image/insta_003_waterlight.jpg"></div>
+        <div class="item"><img src="image/pexels-kostiantyn-stupak-190340.jpg"></div>
+        <div class="item"><img src="image/Photography-Inspiration-Chasing-The-Ice-in-Greenland-1.jpg"></div>	
+        <div class="item"><img src="image/Schoene_Sprueche_ob_kurz_oder_lang_zum_Leben_Titelbild.webp"></div>
+        <div class="item"><img src="image/serce-garni-kviti-cgi-18.jpg"></div>
+        <div class="item"><img src="image/p.jpg"></div>
+        <div class="item"><img src="image/t.jpg"></div>
+      </div>
+      <h1>Accordion</h1>
+      <div id="accordion">
+        
+        <h3>Section 1</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+          suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+          <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+          </p>
+          <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+     
+      <h1>Draggable</h1>
+        <div id="draggable" class="ui-widget-content">
+            <img src="image/images.jpg">
+          </div>
+           
+    </div>
+  
+
+<!--Scripts-->
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <!--Magnific Popup-->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+    <script>$(document).ready(function() {
+      $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+          titleSrc: function(item) {
+            return item.el.attr('title') + ' by Orest Sotnichuk';
+          }
+        }
+      });
+    });</script>
+    <script>$(document).ready(function() {
+      $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+    
+        fixedContentPos: false
+      });
+    });</script>
+   
+    <!--Owl Cariusel-->
+    <script>
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    autoplayHoverPause:true,
+    autoWidth:true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    margin:10,
+    nav:true,
+    responsive:{
+       0:{
+           items:1
+       },
+       600:{
+           items:3
+       },
+       1000:{
+           items:5
+       }
+    }
+    })
+           </script>
+     
+    
+    
+    
+      <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+      <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+      <script src="owlcarousel/owl.carousel.js"></script>
+      <script>
+        $('.owl-carousel').owlCarousel({
+      loop:true,
+      autoplayHoverPause:true,
+      autoWidth:true,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      margin:10,
+      nav:true,
+      responsive:{
+         0:{
+             items:1
+         },
+         600:{
+             items:3
+         },
+         1000:{
+             items:5
+         }
+      }
+      })
+             </script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#draggable" ).draggable();
+      } );
+      </script>
+
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+
+</body>
+ </html>
